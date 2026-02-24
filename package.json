@@ -1,0 +1,21 @@
+{
+  "name": "space-shooter-game",
+  "version": "1.0.0",
+  "description": "A simple 3D space shooter game with Three.js",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && node deploy.js"
+  },
+  "keywords": ["game", "threejs", "space-shooter"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  }
+}
