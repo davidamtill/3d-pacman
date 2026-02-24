@@ -1,0 +1,92 @@
+:root {
+  font-family: 'Space Grotesk', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #f4f6ff;
+  background-color: #01030a;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b1a44, #01030a 55%);
+  color: #f4f6ff;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+.game-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.game-stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hud {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(2, 4, 9, 0.75);
+  border: 1px solid rgba(116, 184, 255, 0.35);
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+.hud__metric {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.hud__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8fb8ff;
+}
+
+.hud__value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hud__status {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #e0e7ff;
+}
+
+@media (max-width: 640px) {
+  .hud {
+    width: calc(100% - 2rem);
+    left: 1rem;
+    transform: none;
+  }
+
+  .hud__metric {
+    min-width: 0;
+  }
+}
