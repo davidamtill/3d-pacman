@@ -1,43 +1,29 @@
 {
-<<<<<<< HEAD
-  "name": "pacman-ghost-ai",
+  "name": "3d-pacman",
   "version": "1.0.0",
-  "description": "Pac-Man game with ghost AI, collision detection, and game rules",
+  "description": "3D Pac-Man / maze collector game (Three.js + Vite + TypeScript)",
   "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "test:watch": "npm test -- --watch",
-    "dev": "tsc --watch"
-  },
-  "keywords": ["pacman", "game", "ai", "ghost"],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^29.5.11",
-    "@types/node": "^20.10.6",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.1.1",
-    "typescript": "^5.3.3"
-=======
-  "name": "space-shooter-game",
-  "version": "1.0.0",
-  "description": "A simple 3D space shooter game with Three.js",
-  "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && node deploy.js"
+    "deploy": "npm run build && node deploy.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "npm test -- --watch"
   },
-  "keywords": ["game", "threejs", "space-shooter"],
+  "keywords": ["pacman", "3d", "threejs", "game", "ai"],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "vite": "^5.0.0"
-  },
   "dependencies": {
     "three": "^0.160.0"
->>>>>>> origin/dev-003
+  },
+  "devDependencies": {
+    "vite": "^5.4.21",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3",
+    "terser": "^5.19.0"
   }
 }
